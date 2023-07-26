@@ -26,6 +26,7 @@ public class Woman extends Person
             if(returnToPreviousLastName){
                 this.lastName = this.originalLastName;
             }
+            partner.partner=null;
             this.partner = null;
         }
     }

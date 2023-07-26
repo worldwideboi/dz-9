@@ -16,11 +16,9 @@ public class Man extends Person
         this.partner = partner;
     }
 
-    public void deregisterPartnership(boolean returnToPreviousLastName){
-        if(partner != null){
-            if(returnToPreviousLastName){
-                this.lastName = partner.lastName;
-            }
+    public void deregisterPartnership() {
+        if (partner != null) {
+            partner.partner = null;
             this.partner = null;
         }
     }
