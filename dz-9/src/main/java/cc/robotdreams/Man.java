@@ -12,9 +12,12 @@ public class Man extends Person
     public void setAge(int age) {
         this.age = age;
     }
-    public void registerPartnership(Woman partner) {
+    public void registerPartnership(Woman partner)
+    {
         this.partner = partner;
+        partner.registerPartnership(this);
     }
+
 
     public void deregisterPartnership() {
         if (partner != null) {
