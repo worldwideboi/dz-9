@@ -14,10 +14,8 @@ public class Man extends Person
     }
     public void registerPartnership(Woman partner)
     {
-        this.partner = partner;
-        partner.registerPartnership(this);
+        partner.partner = this;
     }
-
 
     public void deregisterPartnership() {
         if (partner != null) {

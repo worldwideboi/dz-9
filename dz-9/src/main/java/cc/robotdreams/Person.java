@@ -1,6 +1,6 @@
 package cc.robotdreams;
 
-public class Person
+abstract public class Person
 {
     protected  String firstName;
     protected String lastName;
