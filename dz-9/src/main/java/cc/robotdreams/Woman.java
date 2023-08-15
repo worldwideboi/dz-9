@@ -17,6 +17,7 @@ public class Woman extends Person
         this.age = age;
     }
     public void registerPartnership(Man partner) {
+        this.partner = partner;
         partner.partner = this;
     }
 
